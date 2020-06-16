@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server",
     "build": "ng build && node server",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod"
   },
   "engines": {
     "node": "v13.8.0",
@@ -42,7 +43,8 @@
     "rxjs": "~6.5.4",
     "superagent": "^5.2.2",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "typescript": "~3.7.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.1",
@@ -53,6 +55,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.3.0",
