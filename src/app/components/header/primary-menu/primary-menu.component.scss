@@ -1,0 +1,44 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+.primary-menu {
+    display: none;
+
+    @include media(tablet) {
+        display: block;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.menu {
+        text-align: center;
+        
+        li.menu-item {
+            background: $color__secondary;
+            display: inline-block;
+            margin-left: #{0.5 * $size__spacing-unit};
+            vertical-align: middle;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                border-radius: 4px;
+                color: $color__primary;
+                cursor: pointer;
+                display: block;
+                padding: #{0.4 * $size__spacing-unit} #{1.5 * $size__spacing-unit};
+                text-decoration: none;
+
+                &.active {
+                    background: $color__btn-highlight;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import 'variables-site/variables-site';
+
+.item {
+    position: relative;
+    
+    .links {
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        visibility: none;
+
+        a {
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 3px;
+            color: #fff;
+            display: block;
+            font-weight: 900;
+            padding: #{0.3 * $size__spacing-unit} $size__spacing-unit;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 100px;
+
+            &:hover {
+                background: $color__btn-highlight;
+                border: 0;
+                transition: all $background_transition;
+            }
+        }
+
+        a:first-of-type {
+            margin-bottom: $size__spacing-unit;
+        }
+    }
+
+    &:hover {
+        
+        .links {
+            opacity: 1;
+            transition: all $background_transition;
+            visibility: visible;
+        }
+    }
+}

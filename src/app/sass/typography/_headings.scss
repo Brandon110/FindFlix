@@ -1,0 +1,13 @@
+h1,
+h2,
+h3,
+h5,
+h6,
+.title {
+    font-family: $font__heading;
+    font-weight: 900;
+    line-height: $font__line-height-heading;
+    letter-spacing: 1px;
+    margin: $size__spacing-unit 0;
+    text-transform: uppercase;
+}

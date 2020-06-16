@@ -1,0 +1,14 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+.not-found {
+    margin: 0 auto;
+    padding: #{2 * $size__spacing-unit} 0;
+    text-align: center;
+
+    ::ng-deep .go-back-btn {
+        margin-left: 0;
+    }
+
+    @include contentWidth;
+}

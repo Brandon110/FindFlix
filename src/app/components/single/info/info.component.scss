@@ -1,0 +1,13 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+.info {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: #{6 * $size__spacing-unit};
+    @include contentWidth;
+
+    @include media(tablet) {
+        align-items: flex-start;
+    }
+}

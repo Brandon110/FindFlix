@@ -1,0 +1,74 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+
+ul.seasons {
+    list-style: none;
+    max-height: 400px;
+    margin: 0 auto $size__spacing-unit auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @include contentWidth;
+
+    li.season {
+        overflow: auto;
+        min-height: 150px;
+        margin-bottom: $size__spacing-unit;
+        padding: $size__spacing-unit;
+
+        @include media(tablet) {
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .season-info {
+            padding: $size__spacing-unit 0;
+            text-align: center;
+            width: 100%;
+
+            @include media(tablet) {
+                padding: 0;
+                text-align: left;
+            }
+
+            .title {
+                margin-top: 0;
+
+                @include media(tablet) {
+                    float: left;
+                }
+            }
+    
+            .episode-count {
+                font-weight: 600;
+                margin-bottom: $size__spacing-unit;
+
+                @include media(tablet) {
+                    float: right;
+                }
+            }
+    
+            ::ng-deep {
+
+                .overview {
+                    clear: both;
+
+                    .toggle-show-full-btn {
+                        color: $color__btn-highlight;
+                    }
+                }
+            }
+        }
+
+        ::ng-deep {
+
+            img {
+                width: auto;
+
+                @include media( tablet ) {
+                    margin-right: $size__spacing-unit;
+                }
+            }
+        }
+    }
+}

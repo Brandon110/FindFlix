@@ -1,0 +1,31 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+.mobile-menu {
+    
+    @include media(tablet) {
+        display: none;
+    }
+
+    .menu {
+        background: $color__btn-highlight;
+        border: 0;
+        border-radius: 4px;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        padding: #{0.4 * $size__spacing-unit} #{1.5 * $size__spacing-unit};
+        text-align: center;
+
+        .menu-item {
+            background: #fff;
+            color: $color__primary;
+        }
+    }
+
+    .mat-select-panel {
+        z-index: 99999;
+    }
+}

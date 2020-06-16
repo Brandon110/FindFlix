@@ -1,0 +1,12 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+.item-details {
+    text-align: center;
+
+    @include media(tablet) {
+        padding-left: $size__spacing-unit;
+        text-align: left;
+    }
+        
+}

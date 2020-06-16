@@ -1,0 +1,29 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+
+.show-videos-link {
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 30px;
+    color: inherit;
+    display: inline-block;
+    font-weight: 900;
+    margin-top: #{2 * $size__spacing-unit};
+    padding: $size__spacing-unit;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+        background: $color__btn-highlight;
+        transition: all $background_transition;
+    }
+
+    .icon {
+        font-size: $font__size-md;
+    }
+
+    span {
+        font-size: $font__size-md;
+        margin-left: #{0.5 * $size__spacing-unit};
+    }
+}

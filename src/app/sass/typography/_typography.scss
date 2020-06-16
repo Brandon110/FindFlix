@@ -1,0 +1,14 @@
+body {
+    color: #191919;
+    font-family: $font__body;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: $font__line-height-body;
+    letter-spacing: 0.5px;
+    text-rendering: optimizeLegibility;
+}
+
+/*-----------------------------
+## Headings
+------------------------------*/
+@import 'headings';

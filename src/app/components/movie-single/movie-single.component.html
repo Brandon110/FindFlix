@@ -1,0 +1,16 @@
+<app-single *ngIf='movieInfo'>
+    <app-background-image [backgroundImage]='movieInfo.poster_path'></app-background-image>
+    <app-go-back></app-go-back>
+    <app-info>
+        <app-image [image]='movieInfo.poster_path'></app-image>
+        <app-details>
+            <app-title [title]='movieInfo.title'></app-title>
+            <app-meta>
+                <app-release-date [releaseDate]='movieInfo.release_date'></app-release-date>
+                <app-status [status]='movieInfo.status'></app-status>
+            </app-meta>
+            <app-overview [overview]='movieInfo.overview' [maxLength]='300'></app-overview>
+            <app-link url='/movie/{{ movieInfo.id }}/videos'></app-link>
+        </app-details>
+    </app-info>
+</app-single>

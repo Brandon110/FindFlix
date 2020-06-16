@@ -1,0 +1,87 @@
+{
+    "baseUrl": "https://api.themoviedb.org/3/",
+    "authentication": {
+        "requestToken": {
+            "endpoint": "authentication/token/new"
+        },
+        "sessionId": {
+            "endpoint": "authentication/session/new"
+        }
+    },
+    "methods": {
+        "discover": {
+            "Movie": {
+                "endpoint": "discover/movie",
+                "type": "GET"
+            }
+        },
+        "movie": {
+            "Info": {
+                "endpoint": "movie/:id",
+                "type": "GET"
+            },
+            "Videos": {
+                "endpoint": "movie/:id/videos",
+                "type": "GET"
+            },
+            "Popular": {
+                "endpoint": "movie/popular",
+                "type": "GET"
+            },
+            "NowPlaying": {
+                "endpoint": "movie/now_playing",
+                "type": "GET"
+            },
+            "TopRated": {
+                "endpoint": "movie/top_rated",
+                "type": "GET"
+            },
+            "Upcoming": {
+                "endpoint": "movie/upcoming",
+                "type": "GET"
+            }
+        },
+        "tv": {
+            "Info": {
+                "endpoint": "tv/:id",
+                "type": "GET"
+            },
+            "Popular": {
+                "endpoint": "tv/popular",
+                "type": "GET"
+            },
+            "AiringToday": {
+                "endpoint": "tv/airing_today",
+                "type": "GET"
+            },
+            "OnTheAir": {
+                "endpoint": "tv/on_the_air",
+                "type": "GET"
+            },
+            "TopRated": {
+                "endpoint": "tv/top_rated",
+                "type": "GET"
+            },
+            "Videos": {
+                "endpoint": "tv/:id/videos",
+                "type": "GET"
+            }
+        },
+        "search": {
+            "Movie": {
+                "endpoint": "search/movie",
+                "type": "GET"
+            },
+            "Tv": {
+                "endpoint": "search/tv",
+                "type": "GET"
+            }
+        },
+        "account": {
+            "Info": {
+                "endpoint": "account",
+                "type": "GET"
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<app-single *ngIf='tvInfo'>
+    <app-background-image [backgroundImage]='tvInfo.poster_path'></app-background-image>
+    <app-go-back></app-go-back>
+    <app-info>
+        <app-image [image]='tvInfo.poster_path'></app-image>
+        <app-details>
+            <app-title [title]='tvInfo.name'></app-title>
+            <app-meta>
+                <app-air-dates [firstAirDate]='tvInfo.first_air_date' [lastAirDate]='tvInfo.last_air_date'></app-air-dates>
+                <span class='spacer'>|</span>
+                <app-status [status]='tvInfo.status'></app-status>
+            </app-meta>
+            <app-overview [overview]='tvInfo.overview' [maxLength]='300'></app-overview>
+            <app-link url='/tv/{{ tvInfo.id }}/videos'></app-link>
+        </app-details>
+    </app-info>
+    <app-seasons [seasons]='tvInfo.seasons'></app-seasons>
+</app-single>

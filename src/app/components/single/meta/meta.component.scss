@@ -1,0 +1,22 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+
+.meta {
+    margin-bottom: $size__spacing-unit;
+
+    ::ng-deep {
+        .release-date,
+        .first-air-date,
+        .last-air-date,
+        .status,
+        .spacer {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .spacer {
+            padding: 0 #{0.5 * $size__spacing-unit};
+        }
+    }
+}

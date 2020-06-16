@@ -1,0 +1,21 @@
+@import 'variables-site/variables-site';
+
+.filter-btns {
+    padding: $size__spacing-unit;
+    text-align: center;
+
+    .filter-btn {
+        background: #fff;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: none;
+        color: $color__primary;
+        cursor: pointer;
+        outline: none;
+        padding: #{ 0.4 * $size__spacing-unit} $size__spacing-unit;
+
+        &.active {
+            border: 1px solid $color__btn-highlight;
+        }
+    }
+}

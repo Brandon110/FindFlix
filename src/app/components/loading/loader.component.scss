@@ -1,0 +1,13 @@
+@import 'variables-site/variables-site';
+
+.loader {
+    background: rgba(0, 0, 0, 0.4);
+    color: $color__primary;
+    font-size: $font__size-xxxl;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999999;
+}

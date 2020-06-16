@@ -1,0 +1,38 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+.mobile-form {
+    
+    @include media(tablet) {
+        display: none;
+    }
+
+    .search-wrap {
+        position: relative;
+        width: 100%;
+
+        .search {
+            min-height: 70px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+        }
+
+        .toggle-search-form-btn {
+            background: transparent;
+            box-shadow: none;
+            border: 0;
+            color: $color__primary;
+            cursor: pointer;
+            font-size: $font__size-md;
+            font-weight: 900;
+            outline: none;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    
+    }
+}

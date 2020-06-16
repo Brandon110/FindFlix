@@ -1,0 +1,36 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+.videos {
+    margin-left: auto;
+    margin-right: auto;
+
+    .videos-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .video {
+            padding: #{0.4 * $size__spacing-unit};
+            flex: 1 1 100%;
+
+            @include media(mobile) {
+                flex-basis: 50%;
+            }
+
+            @include media(tablet) {
+                flex-basis: 33.333%;
+            }
+
+            ::ng-deep {
+
+                iframe.video-player {
+                    min-height: 250px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

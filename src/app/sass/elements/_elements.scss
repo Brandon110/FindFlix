@@ -1,0 +1,44 @@
+@import 'variables-site/variables-site';
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: $color__body;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+button {
+    background: transparent;
+    border-radius: 3px;
+    color: lightgrey;
+    outline: none;
+
+    &:hover {
+        color: $color__btn-highlight;
+    }
+}
+
+input {
+    border: 1px solid $color__primary;
+    border-radius: 4px;
+    height: 30px;
+    padding: #{0.2 * $size__spacing-unit} #{0.4 * $size__spacing-unit};
+
+    &:focus {
+        outline-color: $color__btn-highlight;
+        border-color: $color__btn-highlight;
+    }
+}

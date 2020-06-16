@@ -1,0 +1,22 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+
+.background-img {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    @include media(tablet) {
+        display: block;
+    }
+
+    ::ng-deep img {
+        opacity: .5;
+        object-fit: cover;
+    }
+}

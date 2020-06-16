@@ -1,0 +1,13 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+
+.single {
+    min-height: 100vh;
+    position: relative;
+
+    @include media(tablet) {
+        overflow: hidden;
+    }
+
+}

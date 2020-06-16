@@ -1,0 +1,13 @@
+<ng-template #notificationsTemplate let-notification='notification'>
+    <div [ngClass]='useClasses(notification)'>
+        <p>{{ notification.message }}</p>
+        <button class='close-btn' type='button' (click)='close(notification)'>X</button>
+    </div>
+</ng-template>
+
+<div class='notifications'>
+    <div *ngFor='let notification of notifications'>
+        <ng-container *ngTemplateOutlet='notificationsTemplate;context:{notification:notification}'>
+        </ng-container>
+    </div>
+</div>

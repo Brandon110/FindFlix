@@ -1,0 +1,12 @@
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+.title {
+    font-size: $font__size-md;
+
+    @include media(tablet) {
+        font-size: $font__size-lg;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
