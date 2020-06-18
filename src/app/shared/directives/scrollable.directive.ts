@@ -47,7 +47,7 @@ export class ScrollableDirective implements AfterViewInit {
   }
 
   get canScrollEnd() {
-    return this.element.scrollLeft + this.clientWidth != this.scrollWidth;
+    return this.element.scrollLeft + this.clientWidth < this.scrollWidth;
   }
 
   stopScroll(): void {
