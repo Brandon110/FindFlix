@@ -7,6 +7,7 @@
             <app-title [title]='movieInfo.title'></app-title>
             <app-meta>
                 <app-release-date [releaseDate]='movieInfo.release_date'></app-release-date>
+                <span class='spacer'>|</span>
                 <app-status [status]='movieInfo.status'></app-status>
             </app-meta>
             <app-overview [overview]='movieInfo.overview' [maxLength]='300'></app-overview>
